@@ -1,62 +1,20 @@
-# ==========================
-# Python
-# ==========================
+# Environments
+.env
+.venv/
+env/
+venv/
+ENV/
+
+# Python Cache
 __pycache__/
 *.py[cod]
 *$py.class
 
-# Virtual Environments
-venv/
-env/
-.venv/
-
-# Environment Variables
-.env
-.env.*
-
-# IDE Settings
-.vscode/
-.idea/
-
-# Operating System Files
-.DS_Store
-Thumbs.db
-desktop.ini
-
-# Python Distribution
-build/
-dist/
-*.egg-info/
-
-# Logs
-logs/
-*.log
-
-# CSV Files (Sensitive Data)
-data/CONTACTS_MAIL.csv
-data/SENDER_MAIL.csv
-data/IMAP_CREDENTIALS.csv
-data/MAIL_SUCCESS_RECORD.csv
-data/MAIL_FAILURE_RECORD.csv
-data/TOTAL_MAILS_SENT.csv
-
-# Attachments
-attachments/
-
-# Temporary Files
-*.tmp
-*.bak
-*.swp
-
-# Jupyter Notebooks
-.ipynb_checkpoints/
-
-# Coverage Reports
-.coverage
-htmlcov/
-
-# Pytest Cache
-.pytest_cache/
-
-# Local Configuration
-config.local.py
+# Application Data & Logs (Keep private!)
+data/*.csv
+!data/.keep
+logs/*.log
+logs/*.csv
+!logs/.keep
+attachments/*.pdf
+!attachments/.keep
